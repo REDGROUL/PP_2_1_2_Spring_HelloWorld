@@ -11,20 +11,11 @@ public class App {
         Cat catBeanTwo = (Cat) applicationContext.getBean("cat");
         System.out.println(HelloBeanOne.getMessage());
         System.out.println(HelloBeanTwo.getMessage());
-        System.out.println(HelloBeanOne = HelloBeanTwo);
         System.out.println(catBeanOne.getMessage());
         System.out.println(HelloBeanTwo.getMessage());
-        if(catBeanOne == catBeanTwo) {
-            System.out.println(true);
-        } else {
-            System.out.println(false);
-        }
+        System.out.println(catBeanOne == catBeanTwo);
 
-        if(HelloBeanOne == HelloBeanTwo) {
-            System.out.println(true);
-        } else {
-            System.out.println(false);
-        }
+        System.out.println(HelloBeanOne == HelloBeanTwo);
 
     }
 }
